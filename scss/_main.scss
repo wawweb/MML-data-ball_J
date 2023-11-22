@@ -1,0 +1,160 @@
+main {
+    width: 100%;
+    height: auto;
+    padding-top: 42px;
+
+    .bonusPoint {
+        background: url("../img/bonusPoint.gif") no-repeat center;
+        background-size: contain;
+        width: 990px;
+        height: 378px;
+        position: relative;
+        margin: 0 auto;
+
+        .bonusPoint__nums {
+            position: absolute;
+            top: 65%;
+            left: 58%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            li {
+                background: url("../img/nums.png") no-repeat;
+                background-size: 100%;
+                width: 63px;
+                height: 98px;
+
+                &.nums__0 {
+                    background-position-y: 0%;
+                }
+
+                &.nums__1 {
+                    background-position-y: 10%;
+                }
+
+                &.nums__2 {
+                    background-position-y: 20%;
+                }
+
+                &.nums__3 {
+                    background-position-y: 30%;
+                }
+
+                &.nums__4 {
+                    background-position-y: 40%;
+                }
+
+                &.nums__5 {
+                    background-position-y: 50%;
+                }
+
+                &.nums__6 {
+                    background-position-y: 60%;
+                }
+
+                &.nums__7 {
+                    background-position-y: 70%;
+                }
+
+                &.nums__8 {
+                    background-position-y: 80%;
+                }
+
+                &.nums__9 {
+                    background-position-y: 90%;
+                }
+            }
+        }
+
+        .bonusPoint__progress {
+            background: url("../img/bonusPoint__progress.png")no-repeat center;
+            background-size: contain;
+            width: 738px;
+            height: 56px;
+            display: flex;
+            align-items: center;
+            position: absolute;
+            bottom: -11px;
+            left: 53%;
+            transform: translateX(-50%);
+            padding: 0 35px;
+
+            >span {
+                background: linear-gradient(to top, #0094e1 0%, #68dfff 50%, #92ffff 80%, #24b4ff 100%);
+                width: 30%;
+                height: 20px;
+                border-radius: 50px;
+                position: relative;
+
+                &::after {
+                    background: url("../img/bubble.gif") no-repeat;
+                    content: "";
+                    width: 30px;
+                    height: 30px;
+                    position: absolute;
+                    right: -29px;
+                    top: 25%;
+                    transform: translateY(-50%);
+                }
+            }
+
+            &.active {
+                span {
+                    animation:
+                        barMove 5s linear 0s infinite,
+                        shiny 1s linear 0s infinite;
+                }
+
+                @keyframes shiny {
+                    0% {
+                        box-shadow: 0px 0px 0px 0 #ffffff;
+                    }
+
+                    100% {
+                        box-shadow: 0px 0px 5px 0 #ffffff;
+                    }
+                }
+
+
+                @keyframes barMove {
+                    0% {
+                        width: 30%;
+                    }
+
+                    20% {
+                        width: 40%;
+                    }
+
+                    40% {
+                        width: 50%;
+                    }
+
+                    60% {
+                        width: 60%;
+                    }
+
+                    80% {
+                        width: 80%;
+                    }
+
+                    100% {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    .content {
+        width: auto;
+        height: auto;
+
+        >img {
+            margin: 0 auto;
+            display: block;
+            object-fit: contain;
+        }
+    }
+}
