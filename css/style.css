@@ -211,6 +211,125 @@ html body main .bonusPoint .bonusPoint__nums li.nums__8 {
 }
 html body main .bonusPoint .bonusPoint__nums li.nums__9 {
   background-position-y: 90%;
+  animation: activee 20s linear 0s infinite alternate-reverse forwards;
+}
+@-webkit-keyframes activee {
+  0% {
+    background-position-y: 0%;
+  }
+  15% {
+    background-position-y: 15%;
+  }
+  20% {
+    background-position-y: 10%;
+  }
+  25% {
+    background-position-y: 25%;
+  }
+  30% {
+    background-position-y: 20%;
+  }
+  35% {
+    background-position-y: 35%;
+  }
+  40% {
+    background-position-y: 30%;
+  }
+  45% {
+    background-position-y: 45%;
+  }
+  50% {
+    background-position-y: 40%;
+  }
+  55% {
+    background-position-y: 55%;
+  }
+  60% {
+    background-position-y: 50%;
+  }
+  65% {
+    background-position-y: 65%;
+  }
+  70% {
+    background-position-y: 60%;
+  }
+  75% {
+    background-position-y: 75%;
+  }
+  80% {
+    background-position-y: 70%;
+  }
+  85% {
+    background-position-y: 85%;
+  }
+  90% {
+    background-position-y: 80%;
+  }
+  95% {
+    background-position-y: 95%;
+  }
+  100% {
+    background-position-y: 90%;
+  }
+}
+@keyframes activee {
+  0% {
+    background-position-y: 0%;
+  }
+  15% {
+    background-position-y: 15%;
+  }
+  20% {
+    background-position-y: 10%;
+  }
+  25% {
+    background-position-y: 25%;
+  }
+  30% {
+    background-position-y: 20%;
+  }
+  35% {
+    background-position-y: 35%;
+  }
+  40% {
+    background-position-y: 30%;
+  }
+  45% {
+    background-position-y: 45%;
+  }
+  50% {
+    background-position-y: 40%;
+  }
+  55% {
+    background-position-y: 55%;
+  }
+  60% {
+    background-position-y: 50%;
+  }
+  65% {
+    background-position-y: 65%;
+  }
+  70% {
+    background-position-y: 60%;
+  }
+  75% {
+    background-position-y: 75%;
+  }
+  80% {
+    background-position-y: 70%;
+  }
+  85% {
+    background-position-y: 85%;
+  }
+  90% {
+    background-position-y: 80%;
+  }
+  95% {
+    background-position-y: 95%;
+  }
+  100% {
+    background-position-y: 90%;
+  }
 }
 html body main .bonusPoint .bonusPoint__progress {
   background: url("../img/bonusPoint__progress.png") no-repeat center;
